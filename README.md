@@ -12,12 +12,12 @@ cd docker-portainer-stack
 cd ~/mtls-cert-manage/cert 
 cp * ~/docker-portainer-stack/certs
 ```
-# Make PEM  for haproxy
+# Make PEM for portainer
 ```bash
 cd ~/docker-portainer-stack/certs
 openssl x509 -inform PEM -in localhost.crt > localhost.pem
 ```
-# Getting started nginx with certificate
+# Getting started portainer with certificate
 ```bash
 docker-compose up -d
 ```
@@ -32,7 +32,7 @@ docker-compose down -v
 # Install certificate at PC
 [Install certificate](https://github.com/sonnyyu/mtls-cert-manage#install-certificate-at-windows)
 
-# Open Browser
+# Open Portainer from Browser
 ```bash
 https://192.168.1.204:9443
 ```
