@@ -29,6 +29,12 @@ docker-compose down
 ```bash
 docker-compose down -v
 ```
+# Reset Password
+```bash
+docker stop portainer
+docker run --rm -v portainer_data:/data portainer/helper-reset-password
+docker start portainer
+```
 # Install certificate at PC
 [Install certificate](https://github.com/sonnyyu/mtls-cert-manage#install-certificate-at-windows)
 
