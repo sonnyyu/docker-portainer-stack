@@ -35,7 +35,7 @@ docker stop portainer
 docker run --rm -v portainer_data:/data portainer/helper-reset-password
 docker start portainer
 ```
-# Install certificate at PC
+# Import CA Certificate into PC
 [Install certificate](https://github.com/sonnyyu/mtls-cert-manage#install-certificate-at-windows)
 
 # Open Portainer from Browser
