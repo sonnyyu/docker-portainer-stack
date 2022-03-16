@@ -29,7 +29,7 @@ docker-compose down
 ```bash
 docker-compose down -v
 ```
-# Reset Password
+# Reset Admin Password
 ```bash
 docker stop portainer
 docker run --rm -v portainer_data:/data portainer/helper-reset-password
