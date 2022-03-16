@@ -18,5 +18,8 @@ services:
       - portainer  
 networks:
   portainer:
+    name: portainer
 volumes:
   portainer_data:
+#    external: true 
+    name: portainer_data
