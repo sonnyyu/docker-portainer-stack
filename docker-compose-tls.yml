@@ -6,11 +6,11 @@ services:
     volumes:
       - portainer_data:/data
       - /var/run/docker.sock:/var/run/docker.sock
-#      - ./certs:/certs       
-#    command:
-#      --ssl
-#      --sslcert /certs/localhost.crt
-#      --sslkey /certs/localhost.key
+      - ./certs:/certs       
+    command:
+      --ssl
+      --sslcert /certs/localhost.crt
+      --sslkey /certs/localhost.key
     ports:
       - 9443:9443
       - 8080:8000
@@ -20,5 +20,6 @@ networks:
   portainer:
     name: portainer
 volumes:
-  portainer_data: 
+  portainer_data:
+#    external: true 
     name: portainer_data
